@@ -1,0 +1,21 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.token
+
+# Persistent runtime database (keep it on the hosting volume, not in Git)
+data/*.sqlite3
+data/*.sqlite3-*
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Local tooling
+.vscode/
+.idea/
+.pytest_cache/
